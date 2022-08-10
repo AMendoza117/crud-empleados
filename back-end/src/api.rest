@@ -1,0 +1,29 @@
+###
+GET http://localhost:3000/empleados
+
+
+###
+post http://localhost:3000/empleados
+Content-Type: application/json
+
+{
+    "nombre":"Rico Mac",
+    "puesto":"Programador Sr.",
+    "email":"rico@disney.com",
+    "sueldo": 15000
+}
+
+###
+GET http://localhost:3000/empleados/5
+
+###
+DELETE http://localhost:3000/empleados/7
+
+###
+PUT http://localhost:3000/empleados/5
+Content-Type: application/json
+
+{
+    "puesto":"Gerente de Sistemas",
+    "sueldo":35000
+}
